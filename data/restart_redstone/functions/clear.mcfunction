@@ -1,0 +1,1 @@
+execute as @e[tag=restart_redstone,tag=!restart_redstone_run,tag=restart_redstone_active] at @s run function restart_redstone:clear_one
