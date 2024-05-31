@@ -1,0 +1,2 @@
+setblock ~ ~ ~ barrier destroy
+summon item_display ~.5 ~.5 ~.5 {Tags:["restart_redstone"],item:{id:"minecraft:redstone_block",components:{custom_model_data:1}},transformation:[0.9999f,0.0000f,0.0000f,0.0000f,0.0000f,0.9999f,0.0000f,0.0000f,0.0000f,0.0000f,0.9999f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f]}

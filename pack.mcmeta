@@ -1,6 +1,34 @@
 {
 	"pack": {
 		"pack_format": 15,
-		"description": ["",{"text":"Plagiatus' Restart Redstone Pack for Hermitcraft","color":"gold"}, {"text":" commissioned by "}, {"text": "Xisuma", "color": "blue"}]
+		"supported_formats": {
+			"min_inclusive": 15,
+			"max_inclusive": 41
+		},
+		"description": [
+			"",
+			{
+				"text": "Plagiatus' Restart Redstone Pack for Hermitcraft",
+				"color": "gold"
+			},
+			{
+				"text": " commissioned by "
+			},
+			{
+				"text": "Xisuma",
+				"color": "blue"
+			}
+		]
+	},
+	"overlays": {
+		"entries": [
+			{
+				"formats": {
+					"min_inclusive": 41,
+					"max_inclusive": 2147483647
+				},
+				"directory": "overlay_41"
+			}
+		]
 	}
 }
