@@ -6,7 +6,17 @@ Anyone can place those blocks, but only OPs can trigger them.
 
 ### Minecraft 1.20 and above
 
-**To use this datapack, head over to [Releases](/releases), find the one appropriate for your game version (or alternatively click on the green "Code" button in the top right and choose "Download Zip" for the latest code updates) and _unzip_ the zip file into your worlds datapacks folder.**
+**To use this datapack, head over to [Releases](https://github.com/hermitcraft-official/RestartRedstone/releases), find the one appropriate for your game version (or alternatively click on the green "Code" button in the top right and choose "Download Zip" for the latest code updates) and _unzip_ the zip file into your worlds datapacks folder.**
+
+The folder structure should then look like thism where `XXX` is either the release you downloaded (e.g. `1.2`) or `main`:
+
+```
+datapacks
+└ RestartRedstone-XXX
+  ├ data
+  ├ pack.mcmeta
+  └ etc.
+```
 
 ## How to use
 
