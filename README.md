@@ -1,4 +1,4 @@
-# RestartRedstone Dataapck
+# RestartRedstone Datapack
 
 A minecraft datapack that lets you place "dormant" redstone blocks that get activated once for a few ticks on command.
 
