@@ -55,6 +55,10 @@ To change the timing of the redstone blocks, check the functions `run` and `run_
 
 By default the dormant redstone block looks like a normal redstone block. However, it uses a redstone block with a `CustomModelData` NBT tag of 1, so through a resource pack you can turn that into anything you want. Alternatively you can go into the `setup` function and modify the summon command to display a different block / item through the `item_display` entity.
 
+#### 1.21.4 and above
+
+Due to changes in custom model data, it now uses the `custom_model_data` component not with a float of 1, but with a string value of `"restart"`. So if you're changing the block through a resource pack, you'll need to update it to reflect this change.
+
 ### Debug Outputs
 
 The datapack outputs some debug messages for players that have the `admin` tag.
