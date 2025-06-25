@@ -1,0 +1,19 @@
+{
+    "values": [
+        "barrier",
+        "bedrock",
+        "command_block",
+        "chain_command_block",
+        "repeating_command_block", 
+        "end_gateway",
+        "end_portal",
+        "end_portal_frame",
+        "light",
+        "nether_portal",
+        "structure_block",
+        "structure_void",
+        "test_block",
+        "test_instance_block",
+        "reinforced_deepslate"
+    ]
+}

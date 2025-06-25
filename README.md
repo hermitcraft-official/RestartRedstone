@@ -41,6 +41,26 @@ This will activate every loaded dormant redstone block, one by one, for 1 second
 
 _On Hermitcraft this system is supposed to do some resets before a server shutdown, so this command is scheduled to run a few minutes before the server shutdown command is scheduled._
 
+## Settings
+
+Starting in version 1.4 (for MC 1.21.4 and above) you can adjust this setting.
+
+The setting is stored in the `restart_restone.settings` scoreboard objective and can only be changed by an OP of lvl 2 or above through a scoreboard command.
+
+```mcfunction
+/scoreboard players set <settingName> restart_restone.settings <value>
+```
+
+### `whitelist`
+_Default: 0_
+Enables/disables whitelist checking for the replaced blocks. Adjust the block tags to adjust the whitelist/blacklist (see below).
+
+| Value | Meaning | Description |
+|-|-|-|
+|0|No whitelist|There are no checks for which blocks can be replaced.|
+|1|Whitelist|Only specific blocks **can** be replaced. (Default: only redstone block, see below how to modify)|
+|2|Blacklist|Only specific blocks **cannot** be replaced. (Default: Some reasonable blocks like barriers, bedrock and thelike. See below how to modify) |
+
 ## Modification
 
 Various things about this datapack can be modified fairly easily if you know where to look.
@@ -50,6 +70,12 @@ Various things about this datapack can be modified fairly easily if you know whe
 To change the timing of the redstone blocks, check the functions `run` and `run_one` in line 7 and line 5 respectively. Change the delay of the `schedule` command to your liking. The delay in `run` defines when the next block is scheduled and the delay in `run_one` defines how long it stays on.  
 
 > **⚠ Be aware that the delay in `run_one` needs to be less than the delay in `run`, as the system isn't made to support overlapping triggers!**
+
+### Change Whitelist / Blacklist
+
+If you're using the whitelist/blacklist setting, you might want to adjust the selected list to your liking. The list is a block tag, located at `data/restart_redstone/tags/block/whitelist.json` (and `.../blacklist.json` respectively), or `#restart_redstone:whitelist` and `#restart_redstone:blacklist` in-game respectively.   
+
+To adjust the files, [see here](https://minecraft.wiki/w/Tag) how tag files work and change the files/tags accordingly. You can either adjust the files of this pack directly (easier if you extracted the zip) or add another datapack (make sure it's loaded after this one) that replaces the relevant files.
 
 ### Change appearance
 
