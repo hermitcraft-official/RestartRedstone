@@ -45,7 +45,7 @@ jobs:
       - name: Generate release notes
         id: generate_notes
         run: |
-          release_notes="### [Download $new_version](https://github-zip.rx97.dev/${{ github.repository }}?ref=$new_version\n\n"
+          release_notes="### [Download $new_version](https://github-zip.rx97.dev/${{ github.repository }}?ref=$new_version)\n\n"
           commits=$(git log --pretty=format:"* [%h](https://github.com/${{ github.repository }}/commit/%H) %s" $last_tag..HEAD)
           commits=$(echo "$commits" | sed -e 's/release: //')
           release_notes+=$commits

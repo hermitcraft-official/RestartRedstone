@@ -55,11 +55,11 @@ The setting is stored in the `restart_restone.settings` scoreboard objective and
 _Default: 0_
 Enables/disables whitelist checking for the replaced blocks. Adjust the block tags to adjust the whitelist/blacklist (see below).
 
-| Value | Meaning | Description |
-|-|-|-|
-|0|No whitelist|There are no checks for which blocks can be replaced.|
-|1|Whitelist|Only specific blocks **can** be replaced. (Default: only redstone block, see below how to modify)|
-|2|Blacklist|Only specific blocks **cannot** be replaced. (Default: Some reasonable blocks like barriers, bedrock and thelike. See below how to modify) |
+| Value | Meaning      | Description                                                                                                                                |
+| ----- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0     | No whitelist | There are no checks for which blocks can be replaced.                                                                                      |
+| 1     | Whitelist    | Only specific blocks **can** be replaced. (Default: only redstone block, see below how to modify)                                          |
+| 2     | Blacklist    | Only specific blocks **cannot** be replaced. (Default: Some reasonable blocks like barriers, bedrock and thelike. See below how to modify) |
 
 ## Modification
 
@@ -96,3 +96,7 @@ While it was not intended to be a global redstoneclock-like mechanism, it can we
 ```mcfunction
 scoreboard players set #hasRun restart_redstone 0
 ```
+
+## Developing
+
+This repo automatically creates new releases when a commit message starts with `release: `.
