@@ -3,10 +3,10 @@
 		"pack_format": 61,
 		"supported_formats": {
 			"min_inclusive": 61,
-			"max_inclusive": 88
+			"max_inclusive": 94
 		},
 		"min_format": 61,
-		"max_format": 88,
+		"max_format": 94,
 		"description": [
 			"",
 			{
