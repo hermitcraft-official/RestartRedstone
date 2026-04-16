@@ -1,0 +1,8 @@
+{
+    "values": [
+        {
+            "id": "restart_redstone:quick_actions",
+            "required": false
+        }
+    ]
+}

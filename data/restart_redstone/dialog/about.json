@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Restart Redstone",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": "Lets you place 'dormant' redstone blocks that get activated once for a few ticks on command.\nOn Hermitcraft, this command runs a few ticks before server shutdowns.",
+            "width": 300
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "By Plagiatus & rx97",
+                "color": "gray"
+            },
+            "width": 300
+        }
+    ],
+    "actions": [
+        {
+            "label": "Website",
+            "action": {
+                "type": "open_url",
+                "url": "https://github.com/hermitcraft-official/RestartRedstone"
+            }
+        },
+        {
+            "label": "Issues",
+            "action": {
+                "type": "open_url",
+                "url": "https://github.com/hermitcraft-official/RestartRedstone/issues"
+            }
+        },
+        {
+            "label": "Config...",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function restart_redstone:config"
+            }
+        }
+    ],
+    "exit_action": {
+        "action": {
+            "type": "show_dialog",
+            "dialog": "smithed:data_packs"
+        },
+        "label": {
+            "translate": "gui.back"
+        },
+        "width": 200
+    }
+}

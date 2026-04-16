@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Restart Redstone Triggers",
+    "external_title": "Restart Redstone",
+    "columns": 1,
+    "actions": [
+        {
+            "label": "Create/Remove Dormant Block",
+            "tooltip": [
+                "",
+                {
+                    "text": "`/trigger restart_redstone`",
+                    "color": "yellow"
+                },
+                "\n\n",
+                "Deletes a dormant block if standing on top of it. Otherwise, creates a new one."
+            ],
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger restart_redstone"
+            }
+        }
+    ],
+    "exit_action": {
+        "action": {
+            "type": "show_dialog",
+            "dialog": "minecraft:quick_actions"
+        },
+        "label": {
+            "translate": "gui.back"
+        },
+        "width": 200
+    }
+}

@@ -4,26 +4,19 @@ A minecraft datapack that lets you place "dormant" redstone blocks that get acti
 
 Anyone can place those blocks, but only OPs can trigger them.
 
-### Minecraft 1.20 and above
+### Downloads
+These are direct zips that can be placed into your `datapacks` folder.
 
-**To use this datapack, head over to [Releases](https://github.com/hermitcraft-official/RestartRedstone/releases), find the one appropriate for your game version (or alternatively click on the green "Code" button in the top right and choose "Download Zip" for the latest code updates) and _unzip_ the zip file into your worlds datapacks folder.**
-
-The folder structure should then look like thism where `XXX` is either the release you downloaded (e.g. `1.2`) or `main`:
-
-```
-datapacks
-└ RestartRedstone-XXX
-  ├ data
-  ├ pack.mcmeta
-  └ etc.
-```
+- [26.1.x](https://github-zip.rx97.dev/hermitcraft-official/RestartRedstone?ref=v1.7)
+- [1.21.x](https://github-zip.rx97.dev/hermitcraft-official/RestartRedstone?ref=v1.6)
+- [1.20.5](https://github-zip.rx97.dev/hermitcraft-official/RestartRedstone?ref=v1.1)
 
 ## How to use
 
 ### Create
 
 1. Stand on the block you want to turn into a dormant redstone block.
-2. run `/trigger restart_redstone` in chat. The block below you will be turned into a dormant redstone block.
+2. Run `/trigger restart_redstone` in chat. The block below you will be turned into a dormant redstone block.
 
 The dormant redstone block cannot be broken, moved or destroyed by explosions.
 
